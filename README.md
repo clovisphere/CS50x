@@ -11,7 +11,8 @@ I will be using [libcs50](https://github.com/cs50/libcs50/releases) locally, fol
 There's a sample [Makefile](https://en.wikipedia.org/wiki/Makefile) that you can use (if you want).
 
 ```console
-clang -std=c11 -Wall -lcs50 -o TARGET TARGET.c
+$ clang -std=c11 -Wall -lcs50 -o TARGET TARGET.c
+$ ./TARGET
 ```
 
 (where **TARGET** is the name of your C file)
