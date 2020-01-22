@@ -1,6 +1,6 @@
 # CS50x
 
-This repo contains my solution to pset from the popular Harvard's [CS50 course](https://online-learning.harvard.edu/course/cs50-introduction-computer-science).
+This repo contains my solutions to pset(s) from the popular Harvard's [CS50 course](https://online-learning.harvard.edu/course/cs50-introduction-computer-science).
 
 ##### Prerequisite
 
