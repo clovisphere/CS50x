@@ -35,7 +35,7 @@ int main() {
     
     do {
         height = get_int("Height (value should be between 1 and 8): ");
-    } while (height < 1 || height > 8); 
+    } while (height < LOWER_LIMIT || height > UPPER_LIMIT); 
     // the magic starts here:-)
     build_pyramid(height);
     return 0;
