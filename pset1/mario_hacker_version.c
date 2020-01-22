@@ -3,7 +3,7 @@
 
 // define LOWER and UPPER LIMIT constants
 #define LOWER_LIMIT 1
-#define UPPER LIMIT 8
+#define UPPER_LIMIT 8
 
 /**
  * builds the pyramid with given height.
