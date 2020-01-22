@@ -20,8 +20,6 @@ void build_pyramid(int height) {
         for (j = 0; j <= i; j++) {
             printf("#");
         }
-        // c hack to print x number of character
-        printf("  %.*s", j, "#########");
         printf("\n");
         space -= 1;
     } // end outer loop
