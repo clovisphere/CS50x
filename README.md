@@ -12,6 +12,7 @@ There's a sample [Makefile](./Makefile) that you can use (if you want).
 
 ```console
 $ make TARGET
+$ ./TARGET
 ```
 
 or you be old school and write commands to compile and run the program.
