@@ -15,7 +15,7 @@ $ make TARGET
 $ ./TARGET
 ```
 
-or you be old school and write commands to compile and run the program.
+or you can be old school and write the commands to compile and run the program:sunglasses::clap:
 
 ```console
 $ clang -std=c11 -Wall -lcs50 -o TARGET TARGET.c
