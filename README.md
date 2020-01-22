@@ -8,7 +8,7 @@ I will be using [libcs50](https://github.com/cs50/libcs50/releases) locally, fol
 
 ##### How to run code
 
-There's a sample [Makefile](https://en.wikipedia.org/wiki/Makefile) that you can use (if you want).
+There's a sample [Makefile](./Makefile) that you can use (if you want).
 
 ```console
 $ clang -std=c11 -Wall -lcs50 -o TARGET TARGET.c
