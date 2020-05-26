@@ -62,7 +62,9 @@ int main() {
             sentences++;
         }
     }
-    printf("\nLetters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
+    // TODO: remove the line below as the exercise doesn't ask one one to print
+    // the total number of letters, words and sentences.
+    //printf("\nLetters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
     coleman_liau_index(letters, words, sentences);
     return 0;
 }
