@@ -37,23 +37,29 @@ void coleman_liau_index(int t_letter, int t_word, int t_sentence) {
 // starts program execution
 int main() {
     unsigned int letters = 0, words = 0, sentences = 0;
+    bool status = false;
     char c;
-    string s = get_string("enter text: ");
+    string s = get_string("Text: ");
 
     for(int i = 0; i < strlen(s); i++) {
         c = s[i];
+
+        if(c == ' ') {
+            status = false;
+        }
         if(isalpha(c)) {
             letters++;
-        }
-        if(isspace(c)) {
-            words++;
+
+            if(!status) {
+                words++;
+                status = true;
+            }
         }
         if(c == '.' || c == '?' || c == '!') {
-            if(i == strlen(s) - 1) words++;
             sentences++;
         }
     }
-    //printf("Letters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
+    printf("Letters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
     coleman_liau_index(letters, words, sentences);
     return 0;
 }
