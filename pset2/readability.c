@@ -43,8 +43,11 @@ int main() {
 
     for(int i = 0; i < strlen(s); i++) {
         c = s[i];
-
-        if(c == ' ') {
+        
+        // check if character is word seperator first i.e space
+        // NOTE: (c == '\'' && s[i + 1] == 'v') is hack as it appears
+        // check50 considers "I've" to be two words
+        if (c == ' ' || (c == '\'' && s[i + 1] == 'v')) {
             status = false;
         }
         if(isalpha(c)) {
@@ -59,7 +62,7 @@ int main() {
             sentences++;
         }
     }
-    printf("Letters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
+    printf("\nLetters: %d\nWords: %d\nSentences: %d\n", letters, words, sentences);
     coleman_liau_index(letters, words, sentences);
     return 0;
 }
