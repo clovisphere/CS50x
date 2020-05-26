@@ -8,7 +8,7 @@
 /**
  * calculates the Coleman-Liau index
  *
- * @l_letter: total number of letter
+ * @l_letter: total number of letters
  * @t_word: total number of words
  * @t_sentence: total number of sentences
  *
@@ -23,7 +23,7 @@ void coleman_liau_index(int t_letter, int t_word, int t_sentence) {
     // S is the average number of sentences per 100 words
     int index = round((0.0588 * avg_letters_per_100_words) - (0.296 * avg_sentences_per_100_words) - 15.8);
     
-    if (index >= 16) {
+    if(index >= 16) {
         printf("\nGrade 16+\n");
     }
     else if(index <= 1) {
